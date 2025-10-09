@@ -66,3 +66,5 @@ crashlytics-build.properties
 *.obj
 
 /Packages/com.ptc.vuforia.engine-11.4.4.tgz
+
+*.mp4
