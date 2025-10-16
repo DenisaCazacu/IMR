@@ -11,14 +11,11 @@ public class TargetController : MonoBehaviour
     {
         if (other.attachedRigidbody != null)
         {
-            // Calculează distanța dintre player și obiectul aruncat
             float distance = Vector3.Distance(player.position, other.transform.position);
 
-            // Scor bazat pe distanță 
             int score = Mathf.RoundToInt(distance * 10f);
             totalScore += score;
 
-            // Actualizează textul
             if (scoreText != null)
                 scoreText.text = "Score: " + totalScore;
 
